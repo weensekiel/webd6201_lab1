@@ -26,7 +26,7 @@ function redirect()
     location.href = "index.html"; }, 3000)
 }
 
-
+/* Creates aa human resources li element in between contact us and about us */
 function createHR()
 {
     
@@ -38,6 +38,7 @@ function createHR()
   
 }
 
+// displays the services of the best skills we offer our clients
 function createServicesPage()
 {
     // Description variables
@@ -82,6 +83,7 @@ function createServicesPage()
     document.writeln("<p class=\"web-dev\">" + dbDevDesc + "</p>");
 } 
 
+// displays our first project
 function createProject1()
 {
     let projectDesc = "This is one of our favourite projects because we got to learn a new language for it. " +
@@ -93,6 +95,7 @@ function createProject1()
     document.writeln("<p class='center'>" + projectDesc + "</p>");
 }
 
+// displays our second project
 function createProject2()
 {
     let projectDesc = "This was a project that we did in semester 3. We had to use a lot of back end scripting and this gave us a " + 
@@ -103,6 +106,7 @@ function createProject2()
     document.writeln("<p class='center'>" + projectDesc + "</p>");
 }
 
+// displays our third project
 function createProject3()
 {
     let projectDesc = "This project was fun because this was something that we could see being used today. In this project, " + 
@@ -111,5 +115,5 @@ function createProject3()
 
     document.writeln("<img src=\"./Content/images/project3.png\" width=\"601\" height\"401\"/>");
     document.writeln("<p class='center'>" + projectDesc + "</p>");
-    
+
 }

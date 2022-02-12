@@ -111,4 +111,5 @@ function createProject3()
 
     document.writeln("<img src=\"./Content/images/project3.png\" width=\"601\" height\"401\"/>");
     document.writeln("<p class='center'>" + projectDesc + "</p>");
+    
 }

@@ -4,6 +4,7 @@ body{
     font-family: georgia;
     margin-bottom: 50px;
     background-image: url("./images/background.png");
+    text-align: center;
 }
 /* h1{
     color: red;
@@ -17,7 +18,7 @@ h2{
 }
 h3{
     color: white;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -28,7 +29,7 @@ th{
 }
 p{
 	font-family: Arial, Helvetica, sans-serif;
-	color: red;
+	color: white;
 	font-size: 14pt
 }
 code{
@@ -78,9 +79,19 @@ a:active{
 }
 
 .center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+   /*Set width of div to entire screen*/
+  width: 100%;
+
+  /*Set display to flexbox*/
+  display: flex;
+
+  /*Set flexbox direction to column (vertical)*/
+  flex-direction: column;
+
+  /*Align flexbox content to centre of the screen*/
+  align-items: center;
+
+  /*background-image: url("./images/background.png");*/
 }
 
 textarea    { width: 300px; height: 100px; }

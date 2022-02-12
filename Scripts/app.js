@@ -23,10 +23,9 @@ function sendToConsole()
 function redirect()
 {
     setTimeout(function(){ document.getElementById("button");   
-    location.href = "home.html"; }, 3000)
+    location.href = "index.html"; }, 3000)
 }
 
-document.body.onload = addElement;
 
 function createHR()
 {
@@ -82,3 +81,34 @@ function createServicesPage()
 
     document.writeln("<p class=\"web-dev\">" + dbDevDesc + "</p>");
 } 
+
+function createProject1()
+{
+    let projectDesc = "This is one of our favourite projects because we got to learn a new language for it. " +
+    "Although COBOL may be a little annoying to work with compared to the languages we have today, it was " + 
+    "still fun learning something new. We can see how useful learning COBOL can be and want to use more of it.";
+
+    document.writeln("<img src=\"./Content/images/project1a.png\" width=\"601\" height\"401\"/>");
+    document.writeln("<img src=\"./Content/images/project1b.png\" width=\"601\" height\"401\"/>");
+    document.writeln("<p class='center'>" + projectDesc + "</p>");
+}
+
+function createProject2()
+{
+    let projectDesc = "This was a project that we did in semester 3. We had to use a lot of back end scripting and this gave us a " + 
+    "lot of practice. We created functionality that was used to create a user/admin, create customers, change passwords, create a " +
+    "call log and more. This deepend our knowledge in this area significantly."
+
+    document.writeln("<img src=\"./Content/images/project2.png\" width=\"601\" height\"401\"/>");
+    document.writeln("<p class='center'>" + projectDesc + "</p>");
+}
+
+function createProject3()
+{
+    let projectDesc = "This project was fun because this was something that we could see being used today. In this project, " + 
+    "we created a program that kept track of equipment being lent out. The system allowed the user to search for a specific " + 
+    "employee to see what they have taken out. All the information was stored on a database."
+
+    document.writeln("<img src=\"./Content/images/project3.png\" width=\"601\" height\"401\"/>");
+    document.writeln("<p class='center'>" + projectDesc + "</p>");
+}

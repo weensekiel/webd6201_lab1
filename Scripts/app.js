@@ -195,3 +195,4 @@ function validatePasswords()
     }
     return false;
 }
+

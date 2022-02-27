@@ -10,6 +10,7 @@
 <meta charset="utf-8">
 <title>Register</title>
 <link rel = "stylesheet" type = "text/css" href = "Content/app.css">
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 <script src = "Scripts/app.js"></script>
 
 </head>
@@ -36,6 +37,11 @@
     </div>
 
     <div class="form-group">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text" placeholder="Username" minlength="2" required></input>
+    </div>
+
+    <div class="form-group">
         <label for="email">Email:</label>
         <input id="email" name="email" type="email" placeholder="Email Address" required></input>
     </div>
@@ -51,7 +57,7 @@
     </div>
 
     <div>
-    <input class="submit" type="submit" value="Submit">    
+    <input id="submitButton" class="submit" type="submit" value="Submit">    
     </div>
 
      <p>
@@ -60,9 +66,27 @@
     </p>
     </center>
     <script>
+        //stop default form behaviour
         document.getElementById("registerForm").addEventListener("click", function(event){
           event.stopPropagation()
         });
+
+        //create new instance of User when register button is clicked
+        $('#registerForm').submit((e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            var firstName = $("#firstName").val();
+            var lastName = $("#lastName").val();
+            var username = $("#username").val();
+            var email = $("#email").val();
+            var password = $("#password").val();
+
+            //log to console
+            let userObject = new User(firstName, lastName, username, email, password);
+            console.log(userObject);
+        })
+            
         </script>
 </body>
 </html>

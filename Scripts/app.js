@@ -142,20 +142,21 @@ function validateName() {
 
     if (firstName == "")
     {
-        alert("First name cannot be empty.");
         // alert("First name cannot be empty.");
+        document.getElementById("ErrorMessage").innerHTML += "<h2>First name cannot be empty.</h2>";
     }
     else if (firstName.length < 2) 
     {
-        alert("First name has to be longer than 2 letters.");
+        // alert("First name has to be longer than 2 letters.");
+        document.getElementById("ErrorMessage").innerHTML += "<h2>First name must be longer than 2 letters.</h2>";
     }
     else if (lastName == "")
     {
-        alert("Last name cannot be empty.");
+        document.getElementById("ErrorMessage").innerHTML += "<h2>Last name cannot be empty.</h2>";
     }
     else if (lastName.length < 2) 
     {
-        alert("Last name must be longer than 2 letters.");
+        document.getElementById("ErrorMessage").innerHTML += "<h2>Last name must be longer than 2 letters.</h2>";
     }
     return false;
 }
@@ -166,11 +167,11 @@ function validateEmail()
 
     if (email == "")
     {
-        alert("Email cannot be empty.");
+        document.getElementById("ErrorMessage").innerHTML += "<h2>Email cannot be empty.</h2>";
     }
     else if (email.length < 8)
     {
-        alert("Email is too short. Must be longer than 8 characters.");
+        document.getElementById("ErrorMessage").innerHTML += "<h2>Email is too short. Must be longer than 8 characters.</h2>";
     }
     return false;
 }
@@ -183,15 +184,15 @@ function validatePasswords()
     if (password == "")
     {
         // document.getElementById("ErrorMessage").innerHTML = "Password cannot be empty."
-        alert("Password cannot be empty.");
+        document.getElementById("ErrorMessage").innerHTML += "<h2>Password cannot be empty.</h2>";
     }
     else if (password.length < 6)
     {
-        alert("Password must be longer than 6 characters.")
+        document.getElementById("ErrorMessage").innerHTML += "<h2>Password must be longer than 6 characters.</h2>";
     }
     else if (password != confirmPassword)
     {
-        alert("Passwords do not match.")
+        document.getElementById("ErrorMessage").innerHTML += "<h2>Passwords do not match.</h2>";
     }
     return false;
 }

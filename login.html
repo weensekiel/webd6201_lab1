@@ -18,8 +18,21 @@
 </script>
 </head>
 <body>
-    <h1>Login</h1>
     
+
+    <div class="topnav">
+        <ul class="navbar-nav ml-auto" id="myList">
+          <li class="left-nav-item">WEBD6201 - Lesson 1</li>
+          <li class="nav-item"> <a class="nav-link" href="contactForm.html">Contact Us</a> </li>
+          <li class="nav-item" id="aboutUs"> <a class="nav-link" href="aboutUs.html"> About Us</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="services.html">Services</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="projects.html" id="projects">Products</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+        </ul>
+      </div>
+    
+      <h1>Login</h1>
+      
 <form class="cmxform" id="loginForm" method="get" action="login.html" autocomplete="off">
 
     <p>
@@ -33,5 +46,13 @@
     <p>
         <input id="submit" name="submit" type="submit" value="Login"></input>
     </p>
+
+
+    <script>
+          
+        document.getElementById("projects").innerHTML = "Projects";
+        createHR();
+        
+      </script>
 </body>
 </html>
